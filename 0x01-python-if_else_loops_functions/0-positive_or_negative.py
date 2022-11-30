@@ -4,7 +4,9 @@ number = random.randint(-10, 10)
 
 if number < 0:
     print(f"{number:d} is negative")
-else if nubmer == 0:
+elif nubmer == 0:
     print(f"{number:d} is zero")
-else:
+elif number > 0:
     print(f"{number:d} is positive")
+else:
+    print(f"wrong input")
