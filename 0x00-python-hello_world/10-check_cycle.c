@@ -13,11 +13,10 @@ int check_cycle(listint_t *list)
 	if (list == NULL)
 		return (0);
 
-	while (1)
+	while ((check_list = check_list->next) != list)
 	{
-		printf("list[%p] == check_list[%p]\n", (void *)list, (void *)check_list);
-		list = list->next->next;
 		check_list = check_list->next;
+		list = list->next->next != NULL ? list->next->next : list->next;
 		if (list == check_list)
 			return (1);
 	}
