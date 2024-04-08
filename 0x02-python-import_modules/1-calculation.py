@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
     from caculator_1 import add, sub, mul, div
 
 a = 10
 b = 5
 
-print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
-print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
-print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
-print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
+result = add(a, b)
+print("{:d} + {:d} = {:d}".format(a, b, result))
+result = sub(a, b)
+print("{:d} - {:d} = {:d}".format(a, b, result))
+result = mul(a, b)
+print("{:d} * {:d} = {:d}".format(a, b, result))
+result = div(a, b)
+print("{:d} / {:d} = {:d}".format(a, b, result))
